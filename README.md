@@ -29,42 +29,36 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Dependencies in `seismograph-visualization`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Core Libraries
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **react & react-dom**: These are the core libraries for building and rendering React components. They're essential for any React-based application.
+    > **Why?**: To utilize the React framework for building user interfaces.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **react-scripts**: This is a set of scripts from the Create React App. It provides configurations for Babel, Webpack, and scripts for starting, building, and testing the app.
+    > **Why?**: Simplifies the setup and configuration process for a React application.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### UI & Styling
 
-## Learn More
+- **@mui/material, @mui/icons-material, @mui/lab, & @mui/x-date-pickers**: MUI is a popular React UI framework that implements Google's Material Design. These packages provide UI components, icons, lab components, and date pickers respectively.
+    > **Why?**: To create a consistent and attractive UI without building every component from scratch.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **@emotion/react & @emotion/styled**: Emotion is a library designed for writing CSS styles with JavaScript. It's powerful and works well with React.
+    > **Why?**: Offers dynamic styling capabilities and enhances component-based styling.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Data Visualization & Mapping
 
-### Code Splitting
+- **chart.js & react-chartjs-2**: Chart.js is a simple yet flexible JavaScript charting library. `react-chartjs-2` provides React components for Chart.js.
+    > **Why?**: For creating interactive charts to visualize seismic data.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **chartjs-adapter-date-fns**: This is an adapter to allow Chart.js to use `date-fns` for date operations.
+    > **Why?**: Enables Chart.js to work with date functions seamlessly.
 
-### Analyzing the Bundle Size
+- **@react-google-maps/api**: Provides a set of React components wrapping the Google Maps JavaScript API.
+    > **Why?**: If there's a need to show locations or geographical data, this library simplifies the process.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Date Handling
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **date-fns & @date-io/date-fns**: `date-fns` provides utility functions for manipulating dates. `@date-io/date-fns` is an abstraction over date management libraries for MUI pickers.
+    > **Why?**: Simplifies date operations and ensures compatibility with MUI date pickers.
